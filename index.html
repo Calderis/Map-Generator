@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Projet Hydrice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section style="position: fixed; background: white; z-index: 2">
+    <label>
+      Temperature opacity
+      <input id="cursor" type="range" min="O" max="1" step="0.1" value="0" />
+    </label>
+    <label>
+      Humidity opacity
+      <input id="humidityCursor" type="range" min="O" max="1" step="0.1" value="0" />
+    </label>
+  </section>
+  <section style="position: relative">
+    <canvas id="mapCanvas" width="2048" height="2048" style="position: absolute">
+      Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.
+    </canvas>
+    <canvas id="temperatureCanvas" width="2048" height="2048" style="position: absolute; opacity: 0">
+      Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.
+    </canvas>
+    <canvas id="humidityCanvas" width="2048" height="2048" style="position: absolute; opacity: 0">
+      Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.
+    </canvas>
+  </section>
+  <script src="scripts/utils/color.js"></script>
+  <script src="scripts/map/terrain.js"></script>
+  <script src="scripts/map/index.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
